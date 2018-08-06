@@ -22,13 +22,13 @@
 					<span id="is-edit">objeto</span>
 					<span id="is-change" style="displa: none;">
 						<input class="is-jerarqui-object" id="jerarquia-object" type="text" placeholder="objeto">
-						<a id="jerarquia-object-add-row-1"><span>+</span></a>
-						<a id="jerarquia-object-cancel-row-1"><span>x</span> </a>
-					</span>	
-				</span>			
+						<a id="jerarquia-object-add-row-1" id="add-object"><span>+</span></a>
+						<a id="jerarquia-object-cancel-row-1" id="remove-object"><span>x</span> </a>
+					</span>
+				</span>
 			</div>
 		</div>
-		
+
 
 		<input class="uk-input" type="text" placeholder="llave">
 		<input class="uk-input" type="text" placeholder="valor">
@@ -43,7 +43,7 @@
 				display: inline-block;
 				vertical-align: middle;
 				border:  1px solid #dcdcdc;
-				padding: 5px;				
+				padding: 5px;
 	    		width: 200px;
 			}
 			#edit #is-change input.is-jerarqui-object {
@@ -1666,7 +1666,7 @@
 									<?php
 									echo $cat_page_cod_fabricante;
 									?>
-								</td>		
+								</td>
 								<td>
 									<?php
 									echo $cat_page_clave;
@@ -1688,7 +1688,7 @@
 				</table>
 			</div>
 			<?php
-			
+
 			/*
 			$catalogo = $dec_catalogo;
 			foreach ($catalogo as $x => $value) {
@@ -1718,7 +1718,8 @@
 			$("#edit").mouseout(function() {
 				$("#is-edit").css("display", "inline-block");
 				$("#is-change").css("display", "none");
-			});;
+			});
+			()
 		</script>
 		<!-- UIkit CSS -->
 		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.9/css/uikit.min.css" />-->
